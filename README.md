@@ -25,4 +25,4 @@ Generate il frontespizio da terminale. Successivamente potete usare i comandi de
 ### Others
 Il comando `make loop` lancia un loop infinito in cerca di modifiche nei file tex. Se rileva modifiche, il pdf viene rigenerato.
 
-
+![alt tag](https://raw.githubusercontent.com/atzeinicola/unica-thesis-template/master/main-frn.jpg)
