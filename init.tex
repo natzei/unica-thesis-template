@@ -1,0 +1,114 @@
+\usepackage[utf8]{inputenc}
+
+\usepackage[italian,english]{babel}
+
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amsbsy}
+
+\usepackage[left=4cm,right=4cm,top=4.5cm,bottom=4cm]{geometry}
+
+\usepackage{color}
+\usepackage[usenames,dvipsnames]{xcolor}
+
+\usepackage[swapnames]{frontespizio}
+\usepackage{emptypage}
+
+\usepackage{url}
+
+\usepackage{fancyhdr}
+\usepackage{fancyvrb}\VerbatimFootnotes
+
+\usepackage{csquotes}
+
+\usepackage[
+	pdftitle={\thesisTitle},
+	pdfauthor={\thesisAuthor},
+	pdfsubject={Master Thesis},
+	%hidelinks,
+	%linktocpage=true
+	%backref=page			%enable back references
+]{hyperref}
+
+\usepackage{mdframed}
+
+
+\usepackage[chapter]{minted}
+\makeatletter	%minted fix for background%
+\patchcmd{\minted@colorbg}{\noindent}{\medskip\noindent}{}{}
+\apptocmd{\endminted@colorbg}{\par\medskip}{}{}
+\makeatother
+
+\usepackage{listings}
+
+
+%\setminted{fontsize=\footnotesize}
+\usemintedstyle{friendly}
+%'default', 'pastie', 'perldoc', 'xcode', 'friendly', 'trac', 'vs', 'borland', 'igor', 'autumn'
+
+%\usepackage{caption}
+%\newenvironment{longlisting}{\captionsetup{type=listing}}{}
+
+\usepackage[
+	backend=bibtexu,
+	bibencoding=utf8,
+	backref=true,
+	urldate=iso8601,
+	date=iso8601
+	]{biblatex}
+
+
+\usepackage[nottoc,numbib]{tocbibind}		% include "List of ..." into the ToC
+
+
+
+%% from scaffolding
+\usepackage{titlesec}
+\usepackage{stmaryrd}
+%\usepackage{graphicx}
+\usepackage{marvosym}
+
+
+\usepackage{pdfsync}
+\usepackage{wasysym}
+%\usepackage{chemarr}
+
+\usepackage[official]{eurosym} % Euro symbol (opts: official or gen)
+
+\usepackage{alltt} % for math mode within verbatim
+
+% \usepackage{enumerate} % Fancy enumeration styles
+
+\usepackage{fixltx2e} % Text mode subscript and superscript
+\usepackage{xspace} % Smart spaces after commands
+
+\usepackage{nicefrac}
+\usepackage{thmtools, thm-restate, thm-autoref}  % Advanced theorem handling
+
+%\graphicspath{{figures/}} \DeclareGraphicsExtensions{.pdf,.jpg}
+%\usepackage[center]{subfigure}
+%\renewcommand{\subfigcapskip}{3pt}
+
+% For custom alignment in itemize and description
+\usepackage[inline,shortlabels]{enumitem} 
+\newlist{inlinelist}{enumerate*}{1}
+\setlist*[inlinelist,1]{%
+	label=(\roman*),
+}
+
+%\usepackage{appendix} % conflict with LNCS style
+
+
+\usepackage{cleveref}
+
+
+\usepackage{fixltx2e} % Text mode subscript and superscript
+\usepackage{xspace}   % Smart spaces after commands
+\usepackage{xifthen}  % Extended conditional commands
+
+%\usepackage{tikz} % for graph of module importation --- load LAST!
+
+\usepackage{ifthen}
+
+\usepackage[toc,page]{appendix}

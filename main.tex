@@ -1,0 +1,61 @@
+% !TEX spellcheck = it-IT en-US
+% !TEX encoding = UTF-8 Unicode
+% !TEX root = main.tex
+
+\documentclass[11pt,a4paper,twoside,openright,titlepage]{book}
+
+\include{thesis-info}	%author and title of the thesis - load before "init"
+\include{init}			%packages declaration
+\include{macro}			%commands and environment definition
+
+% add bibliography databases
+\bibliography{bib/main.bib}
+
+\begin{document}
+
+% ================================================================
+% PARTE INIZIALE
+% ================================================================
+\frontmatter
+\include{frontmatter/frontespizio}
+\include{frontmatter/dedica}
+
+\cleardoublepage
+\setcounter{page}{1}
+\pagenumbering{Roman}
+\include{frontmatter/abstract}
+
+\cleardoublepage
+\setcounter{page}{1}
+\pagenumbering{roman}
+\tableofcontents
+
+% ================================================================
+% CORPO CENTRALE
+% ================================================================
+\mainmatter
+\include{mainmatter/intro}
+
+\part{Background}
+\include{mainmatter/part-I-chapter-one}
+
+\part{A title to summarize your contribution}
+\include{mainmatter/part-II-chapter-one}
+
+\include{backmatter/appendix}
+
+% ================================================================
+% PARTE FINALE
+% ================================================================
+\backmatter
+
+\listoffigures
+\listoftables
+\listoflistings
+\addcontentsline{toc}{chapter}{List of Listings}
+
+\printbibliography[heading=bibintoc]
+
+
+
+\end{document}
